@@ -1,9 +1,6 @@
 ﻿using ControleFinanceiro.BLL.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ControleFinanceiro.DAL.Mapeamentos
 {
@@ -11,7 +8,7 @@ namespace ControleFinanceiro.DAL.Mapeamentos
     {
         public void Configure(EntityTypeBuilder<Cartao> builder)
         {
-            builder.HasKey(c => c.CartaoID);
+            builder.HasKey(c => c.CartaoId);
 
             builder.Property(c => c.Nome).IsRequired().HasMaxLength(20);
             builder.HasIndex(c => c.Nome).IsUnique();

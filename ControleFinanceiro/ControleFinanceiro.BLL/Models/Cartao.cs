@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ControleFinanceiro.BLL.Models
 {
     public class Cartao
     {
-        public int CartaoID { get; set; }
+        public int CartaoId { get; set; }
 
         public string Nome { get; set; }
 
@@ -17,7 +15,6 @@ namespace ControleFinanceiro.BLL.Models
         public double Limite { get; set; }
 
         public string UsuarioId { get; set; }
-
         public Usuario Usuario { get; set; }
 
         public virtual ICollection<Despesa> Despesas { get; set; }

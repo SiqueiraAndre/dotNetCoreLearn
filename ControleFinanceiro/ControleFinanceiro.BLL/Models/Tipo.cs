@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ControleFinanceiro.BLL.Models
 {
@@ -11,6 +9,5 @@ namespace ControleFinanceiro.BLL.Models
         public string Nome { get; set; }
 
         public virtual ICollection<Categoria> Categorias { get; set; }
-
     }
 }

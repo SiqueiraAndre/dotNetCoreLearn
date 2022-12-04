@@ -1,9 +1,6 @@
 ﻿using ControleFinanceiro.BLL.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ControleFinanceiro.DAL.Mapeamentos
 {
@@ -15,7 +12,7 @@ namespace ControleFinanceiro.DAL.Mapeamentos
 
             builder.Property(d => d.Descricao).IsRequired().HasMaxLength(50);
 
-            builder.Property(d => d.valor).IsRequired();
+            builder.Property(d => d.Valor).IsRequired();
 
             builder.Property(d => d.Dia).IsRequired();
 
